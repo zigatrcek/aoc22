@@ -4,9 +4,6 @@ input: str = './input'
 with open(input, 'r') as f:
     data = [[y for y in map(ord, x.split())] for x in f.read().strip().split('\n')]
 
-
-wins = [(1, 2), (2, 3), (3, 1)]
-
 score = 0
 for pair in data:
     a, b = pair[0] - 65, pair[1] - 88
